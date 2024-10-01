@@ -6,6 +6,8 @@ This project addresses the problem of simplifying complex contractual documents 
 
 The project leverages state-of-the-art machine learning techniques, including fine-tuning the **Florence-2 model** on the **DocVQA** dataset for document question answering and implementing secure encryption for sensitive document images.
 
+**Video Demo**: [Google Drive](https://drive.google.com/file/d/1Ch9GXpYFEiHBE5ZniTLiupaMVvqb21rl/view?usp=sharing)
+
 ## **Features**
 
 - **Streamlit UI**: A simple, user-friendly interface for document upload, question asking, and document comprehension.
