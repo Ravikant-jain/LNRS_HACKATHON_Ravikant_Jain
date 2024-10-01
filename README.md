@@ -8,6 +8,8 @@ The project leverages state-of-the-art machine learning techniques, including fi
 
 **Video Demo**: [Google Drive](https://drive.google.com/file/d/1Ch9GXpYFEiHBE5ZniTLiupaMVvqb21rl/view?usp=sharing)
 
+**Model artifact file can be downloaded from**: [Kaggle](https://www.kaggle.com/models/tanishqsinghai/florence_docvqa/)
+
 ## **Features**
 
 - **Streamlit UI**: A simple, user-friendly interface for document upload, question asking, and document comprehension.
