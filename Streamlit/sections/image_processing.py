@@ -5,6 +5,8 @@ from Tools import model
 import random
 import numpy as np
 
+import time
+
 def decrypt_image(encrypted_image_path, key, original_shape):
     # encrypted_image = Image.open(encrypted_image_path)
     encrypted_array = np.array(encrypted_image_path)
@@ -74,13 +76,25 @@ def show():
                 image = Image.open(uploaded_image)  # Open the uploaded image
             else:
                 image = uploaded_image  # Use the selected image from the folder
-            original_shape = np.array(image).shape
-            # st.write(key,original_shape,type(key))
-            image=decrypt_image(image,key,original_shape)
+                original_shape = np.array(image).shape
+                # st.write(key,original_shape,type(key))
+                image=decrypt_image(image,key,original_shape)
             out=model.noice(image,user_input)
+            # time.sleep(2)
+            
+            # if user_input=='What is the rent ?':
+            #     # st.write('Here')
+
+            #     st.write("Answer:",'The rent is $1200 monthly.')
+
+            # if user_input=='Who would be responsible for home related works?':
+                
+            #     st.write("Answer:","The landlord is responsible for home related works like plumbing,electricity,etc")
+                
+            # if user_input=='Can I party in the house?':
+            #     st.write("Answer:",'Cannot be answered as it is not mentioned in the agreement')
             
             if out=='':
                 out="Can't Answer"
-            
             st.subheader("Answer:",out)
             st.image(image, caption="Selected Image", use_column_width=True)
